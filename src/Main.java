@@ -29,7 +29,7 @@ public class Main {
             g2.draw(topArc);
             g2.fill(topArc);
 
-            RoundRectangle2D body = new RoundRectangle2D.Double(230, 75, 130, 320, 20, 20 );
+            RoundRectangle2D body = new RoundRectangle2D.Double(230, 75, 130, 360, 20, 20 );
             g2.draw(body);
             g2.fill(body);
 
@@ -69,18 +69,29 @@ public class Main {
             g2.draw(trianglRightDown);
             g2.fill(trianglRightDown);
 
-            RoundRectangle2D downRectangle = new RoundRectangle2D.Double(262.5, 405 ,65, 85, 20, 20);
+            RoundRectangle2D downRectangle = new RoundRectangle2D.Double(262.5, 445 ,65, 85, 20, 20);
             g2.fill(downRectangle);
             g2.draw(downRectangle);
 
             g2.setColor(Color.RED);
-            Ellipse2D red = new Ellipse2D.Double(250, 120, 90, 90);
+            Ellipse2D red = new Ellipse2D.Double(250, 100, 90, 90);
             g2.fill(red);
             g2.draw(red);
 
+            g2.setColor(Color.YELLOW);
+            Ellipse2D yellow = new Ellipse2D.Double(250, 210, 90, 90);
+            g2.fill(yellow);
+            g2.draw(yellow);
 
+            g2.setColor(Color.GREEN);
+            Ellipse2D green = new Ellipse2D.Double(250, 320, 90, 90);
+            g2.fill(green);
+            g2.draw(green);
 
-
+            //g2.setColor(Color.WHITE);
+            //Arc2D whiteArc = new Arc2D.Double(250, 90, 100, 20, -45, 90, Arc2D.OPEN);
+            //g2.fill(whiteArc);
+            //g2.draw(whiteArc);
 
         }
     }
